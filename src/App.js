@@ -190,11 +190,6 @@ function App() {
           </div>
 
           <div className="app-input-group">
-            <label>{language === 'pt' ? 'Hora' : 'Time'}</label>
-            <input type="time" value={time} onChange={(e) => setTime(e.target.value)} />
-          </div>
-
-          <div className="app-input-group">
             <label>{language === 'pt' ? 'companhia aérea' : 'Which airline do you prefer?'}</label>
             <select value={airline} onChange={(e) => setAirline(e.target.value)}>
               <option value="">{language === 'pt' ? 'Selecione' : 'Select'}</option>
