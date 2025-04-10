@@ -1,0 +1,111 @@
+.converter-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    background: linear-gradient(to right, #2193b0, #0b1c2c);
+    color: rgb(255, 255, 255);
+    font-family: 'Arial', sans-serif;
+    position: relative;
+}
+
+.empresa-logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.empresa-logo:hover {
+    opacity: 0.7;
+}
+
+
+.input-group {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 15px;
+    width: 400px;
+    background: white;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.input-group input {
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    width: 80%;
+    text-align: left;
+}
+
+.currency {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.exchange-icon {
+    font-size: 2rem;
+    margin: 15px 0;
+    color: #2193b0;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.exchange-icon:hover {
+    transform: rotate(180deg);
+}
+
+.converter-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background: #2193b0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.converter-button:hover {
+    background: #2193b0;
+}
+.converter-card {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5);
+    width: 420px;
+    max-width: 90%;
+}
+.exchange-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+.central-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -40px; /* quanto menor, mais "pra cima" */
+  }
+  
+  .central-logo {
+    width: 80px;
+    margin-bottom: 10px;
+  }
+  
+  .converter-title {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  

@@ -1,0 +1,128 @@
+.orcamento-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  background: linear-gradient(to right, #2193b0, #0b1c2c);
+  color: white;
+  font-family: 'Arial', sans-serif;
+  position: relative;
+}
+
+.orcamento-logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 100px;
+  height: auto;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.orcamento-logo:hover {
+  opacity: 0.7;
+}
+
+.orcamento-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.orcamento-content {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.orcamento-message {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.orcamento-subtext {
+  font-size: 1rem;
+  margin-top: 10px;
+  opacity: 0.8;
+}
+.orcamento-card {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.4);
+  max-width: 400px;
+  width: 90%;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.orcamento-destino {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.orcamento-lista {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.orcamento-lista li {
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+}
+
+.orcamento-total {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.orcamento-btn {
+  background: linear-gradient(to right, #2193b0, #0b1c2c);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.orcamento-btn:hover {
+  background: #2193b0;
+  color: #0b1c2c;
+  transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.novo-orcamento-btn {
+  margin-top: 20px;
+  background: transparent;
+  border: 2px solid #2193b0;
+  color: #2193b0;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.novo-orcamento-btn:hover {
+  background: #2193b0;
+  color: white;
+  transform: scale(1.05);
+}

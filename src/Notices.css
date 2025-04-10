@@ -1,0 +1,109 @@
+.notices-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  background: linear-gradient(to right, #2193b0, #0b1c2c);
+  color: white;
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+}
+
+.notices-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.aviso-logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 100px;
+  height: auto;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.aviso-logo:hover {
+  opacity: 0.7;
+}
+
+.notices-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.arrow-icon {
+  font-size: 2.5rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+  background: linear-gradient(to right, #2193b0, #0b1c2c);
+  padding: 10px;
+  border-radius: 50%;
+  color: white;
+  box-shadow: 0 0 10px rgba(33, 147, 176, 0.7);
+}
+.arrow-icon:hover {
+  transform: scale(1.2);
+  color: #00ffd0;
+}
+
+.notices-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 25px;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  animation: slideIn 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.notices-header {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notices-description {
+  font-size: 1rem;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+.notices-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  background: linear-gradient(to right, #2193b0, #0b1c2c);
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s;
+  box-shadow: 0px 4px 15px rgba(33, 147, 176, 0.4);
+}
+.notices-button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(to right, #0b1c2c, #2193b0);
+}
+
+.notices-footer {
+  margin-top: 40px;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
