@@ -51,7 +51,7 @@ function ClienteChat() {
               ...prevMessages,
               { text: response, fromBot: true }
             ]);
-          }, index * 1500); 
+          }, index * 1500);
         });
       }, 1000);
     }
@@ -98,6 +98,7 @@ function ClienteChat() {
           placeholder="Escreva seu feedback..."
           value={input}
           onChange={(e) => setInput(e.target.value)}
+          onKeyDown={(e) => e.key === 'Enter' && handleSendMessage()}
         />
         <div className="rating">
           {[1, 2, 3, 4, 5].map((num) => (
@@ -134,6 +135,7 @@ function ClienteChat() {
                 placeholder="Escreva sua mensagem..."
                 value={supportInput}
                 onChange={(e) => setSupportInput(e.target.value)}
+                onKeyDown={(e) => e.key === 'Enter' && handleSupportSendMessage()}
               />
               <button onClick={handleSupportSendMessage}>Enviar</button>
             </div>

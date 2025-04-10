@@ -75,7 +75,8 @@ function App() {
   ];
 
   const handleSearch = () => {
-    if (!origin || !destination || !departureDate || !returnDate || !time || !airline) {
+    if (!origin || !destination || !departureDate || !returnDate || !airline) {
+
       setError(language === 'pt' ? 'Por favor, preencha todos os campos.' : 'Please fill in all fields.');
       setTimeout(() => setError(''), 5000);
       return;
@@ -83,8 +84,8 @@ function App() {
   
     setError('');
     alert(`${language === 'pt' ? 'Buscando viagens' : 'Searching for trips'} de ${origin} para ${destination} 
-      ${language === 'pt' ? 'ida em' : 'departure on'} ${departureDate}, 
-      ${language === 'pt' ? 'volta em' : 'return on'} ${returnDate} às ${time}, 
+      ${language === 'pt' ? 'ida em' : 'departure on'} ${departureDate}
+      ${language === 'pt' ? 'volta em' : 'return on'} ${returnDate} 
       ${language === 'pt' ? 'orçamento máximo: R$' : 'max budget: R$'} ${parseInt(maxBudget).toLocaleString('pt-BR')}
       ${language === 'pt' ? 'companhia aérea: ' : 'airline: '} ${airline}`);
   
